@@ -6,10 +6,14 @@ run the node server using below command:
 npm install
 **node app.js**
 
+Server runs on localhost:3001
+
 run the react client using below command:
 **cd react-client **
 npm install 
 **npm start**
+
+Client runs on localhost:3000
 
 Images:
 Home Screen

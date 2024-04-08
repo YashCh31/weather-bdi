@@ -1,0 +1,79 @@
+.weather-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("https://source.unsplash.com/1600x900/?weather");
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.weather-form-input, .weather-form-button {
+    width: 300px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border: 1px solid #ced4da;
+}
+
+.weather-form-input {
+    padding: 0 10px;
+}
+
+.weather-form-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.weather-form-button:hover {
+    background-color: #0069d9;
+}
+
+.weather-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    opacity: 1;
+}
+
+.weather-table th, .weather-table td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: left;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+    background-color: rgba(173, 216, 230, 0.7);
+}
+
+.weather-table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.weather-table tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.weather-table tr:hover {
+    background-color: rgba(0, 0, 0, 0.075);
+}
+
+.weather-icon img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.weather-description {
+    font-style: italic;
+    margin-top: 5px;
+}

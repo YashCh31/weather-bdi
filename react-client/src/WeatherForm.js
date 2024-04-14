@@ -11,9 +11,9 @@ function WeatherForm() {
     const getWeather = async () => {
         try {
             //const coordResp = await axios.get(`http://localhost:3001/getWeatherInfo/city/?city=${city}`);
-            const coordResp = await axios.get(`https://weather-bdiplus-0d49aaaaa8a4.herokuapp.com/getWeatherInfo/city/?city=${city}`);
+            const coordResp = await axios.get(`https://weather-bdiplus-0d49aaaaa8a4.herokuapp.com/getWeatherInfo/city?city=${city}`);
             const { lat, lon } = coordResp.data[0];
-            const weatherResp = await axios.get(`https://weather-bdiplus-0d49aaaaa8a4.herokuapp.com/getWeatherInfo/all/?lat=${lat}&lon=${lon}`);
+            const weatherResp = await axios.get(`https://weather-bdiplus-0d49aaaaa8a4.herokuapp.com/getWeatherInfo/all?lat=${lat}&lon=${lon}`);
             setWeather(weatherResp.data.current);
             setIsTableVisible(true);
         } catch (error) {
